@@ -1,0 +1,203 @@
+# Retail Customer Analytics & Revenue Intelligence
+
+## Project Overview
+
+This project analyzes an online retail dataset to uncover customer purchasing behavior, revenue trends, product performance, and cross-selling opportunities. It combines business intelligence, statistical analysis, customer segmentation, unsupervised machine learning, and market basket analysis to generate actionable business insights that support data-driven decision-making.
+
+The project demonstrates an end-to-end analytics workflow including data cleaning, exploratory data analysis (EDA), customer segmentation using both RFM Analysis and K-Means Clustering, association rule mining using the Apriori algorithm, and an interactive Tableau Executive Dashboard.
+
+---
+
+# Business Problem Statement
+
+Retail businesses generate millions of transactional records but often struggle to answer critical business questions such as:
+
+* Which customers generate the highest revenue?
+* Which customers are at risk of churn?
+* Which products contribute most to revenue?
+* Which products are frequently purchased together?
+* How can customers be segmented for targeted marketing?
+* Which markets contribute the highest sales?
+* How can business executives monitor key performance indicators effectively?
+
+The objective of this project is to transform raw transactional data into actionable business intelligence that supports customer retention, revenue growth, personalized marketing, inventory optimization, and cross-selling strategies.
+
+---
+
+# Objectives
+
+* Analyze overall retail sales performance.
+* Identify revenue trends over time.
+* Evaluate customer purchasing behavior.
+* Perform customer segmentation using RFM Analysis.
+* Compare RFM Segmentation with K-Means Clustering.
+* Discover product purchase associations using Market Basket Analysis.
+* Build an executive-level Tableau dashboard.
+* Generate business recommendations based on analytical findings.
+
+---
+
+# Dataset
+
+**Dataset:** Online Retail Dataset
+
+### Features
+
+* Invoice Number
+* Stock Code
+* Product Description
+* Quantity
+* Invoice Date
+* Unit Price
+* Customer ID
+* Country
+
+---
+
+# Project Workflow
+
+```
+Data Collection
+       │
+       ▼
+Data Cleaning
+       │
+       ▼
+Exploratory Data Analysis
+       │
+       ▼
+Revenue Analysis
+       │
+       ▼
+Customer Analysis
+       │
+       ▼
+Product Analysis
+       │
+       ▼
+RFM Customer Segmentation
+       │
+       ▼
+K-Means Customer Clustering
+       │
+       ▼
+Market Basket Analysis
+       │
+       ▼
+Business Insights
+       │
+       ▼
+Tableau Dashboard
+
+# Data Cleaning
+
+Performed the following preprocessing steps:
+
+* Removed duplicate transactions
+* Removed cancelled invoices
+* Removed missing Customer IDs
+* Removed negative quantities
+* Created Revenue feature
+* Converted Invoice Date to datetime
+* Created Year-Month feature
+* Created RFM dataset
+* Standardized data for clustering
+
+---
+
+# Exploratory Data Analysis
+
+Performed analysis on:
+
+* Overall KPIs
+* Monthly Revenue Trend
+* Country-wise Revenue Analysis
+* Top Revenue Products
+* Top Customers
+* Customer Purchase Distribution
+* Revenue Contribution Analysis
+
+---
+
+# RFM Analysis
+
+Calculated:
+
+* **Recency**
+* **Frequency**
+* **Monetary Value**
+
+Customers were segmented into:
+
+* Champions
+* Loyal Customers
+* Potential Loyalists
+* Need Attention
+* At Risk
+* Lost Customers
+
+This segmentation supports customer retention and personalized marketing campaigns.
+
+---
+
+# K-Means Customer Clustering
+
+Applied K-Means clustering using standardized RFM features.
+
+### Cluster Validation
+
+* Elbow Method
+* Silhouette Score
+
+Final model selected **4 customer clusters**.
+
+Cluster profiling included:
+
+* Average Recency
+* Average Frequency
+* Average Monetary Value
+* Revenue Contribution
+* Customer Count
+
+Comparison with RFM segmentation was also performed to evaluate business interpretability.
+
+---
+
+# Market Basket Analysis
+
+Applied Apriori Algorithm to identify frequent product combinations.
+
+Generated:
+
+* Frequent Itemsets
+* Association Rules
+* Support
+* Confidence
+* Lift
+
+The analysis identified strong product affinities that can be leveraged for:
+
+* Cross-selling
+* Product Bundling
+* Store Layout Optimization
+* Recommendation Systems
+
+---
+
+# Tableau Dashboard
+
+Designed an Executive Dashboard including:
+
+* Executive KPI Cards
+* Monthly Revenue Trend
+* Revenue by Country
+* Product Performance
+* Customer Segmentation
+* Customer Clusters
+* Market Basket Insights
+* Filters
+* Executive Summary
+
+# Project Outcome
+
+This project demonstrates the complete lifecycle of a retail analytics solution—from raw transaction data to executive decision support. By combining statistical analysis, customer segmentation, unsupervised machine learning, association rule mining, and interactive visualization, it provides actionable insights that can improve customer retention, increase revenue, optimize product strategy, and enable data-driven business decisions.
